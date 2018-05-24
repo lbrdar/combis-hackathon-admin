@@ -20,10 +20,12 @@ class MessagesList extends React.Component {
         },
         {
           type: 'invite',
+          location: 'KBC Rijeka',
           text: 'Come and donate'
         },
         {
           type: 'invite',
+          location: 'CK Zagreb',
           text: 'Need blood pls'
         },
       ],

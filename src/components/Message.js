@@ -10,6 +10,7 @@ export default class Message extends React.Component {
     } else {
       this.state = {
         type: '',
+        location: '',
         text: ''
       };
     }
@@ -37,6 +38,17 @@ export default class Message extends React.Component {
             onChange={e => this.setState({ type: e.target.value })}
             value={this.state.type}
           />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="location"
+            label="Location"
+            type="text"
+            fullWidth
+            onChange={e => this.setState({ location: e.target.value })}
+            value={this.state.location}
+          />
+
           <TextField
             multiLine
             margin="dense"
