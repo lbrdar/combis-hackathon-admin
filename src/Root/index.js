@@ -5,7 +5,7 @@ import {
   AppBar
 } from 'material-ui';
 import { Breadcrumb, Drawer } from '../common';
-import { DonorsList, MessagesList, QuestionnairesList } from "../screens";
+import { DonorsList, MessagesList, QuestionnairesList, Home } from "../screens";
 
 const styles = {
   container: {
@@ -75,6 +75,7 @@ class Root extends React.Component {
         />
         <div style={{ ...styles.contentContainer, ...calculatedStyle }}>
           <Switch>
+            <Route exact path="/" component={Home} />
             <Route exact path="/donors" component={DonorsList} />
             <Route exact path="/messages" component={MessagesList} />
             <Route exact path="/questionnaires" component={QuestionnairesList} />
